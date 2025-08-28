@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>PriceSense Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body class="bg-slate-50">
+  <div class="max-w-6xl mx-auto p-6">
+    <h1 class="text-3xl font-bold text-indigo-600 mb-4">🛒 PriceSense</h1>
+    <div class="flex gap-2 mb-4">
+      <input id="q" placeholder="Search products..." class="border rounded px-3 py-2 w-full"/>
+      <button id="search" class="bg-indigo-600 text-white px-4 py-2 rounded">Search</button>
+    </div>
+    <div id="list" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+    <div class="mt-8 bg-white p-4 rounded shadow">
+      <h2 class="text-xl font-semibold mb-2" id="chart-title">Price history</h2>
+      <div id="chart" class="w-full h-96"></div>
+    </div>
+  </div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

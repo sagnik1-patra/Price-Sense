@@ -1,0 +1,26 @@
+{
+  "price_model": {
+    "trained": true,
+    "framework": "tensorflow",
+    "epochs": 5,
+    "final_loss": 0.004512021318078041,
+    "final_val_loss": 0.0031023453921079636
+  },
+  "fake_review_model": {
+    "trained": true,
+    "n_reviews": 726,
+    "pos_rate": 0.02066115702479339,
+    "features": [
+      "length",
+      "exclam",
+      "caps_ratio",
+      "unique_ratio",
+      "digits",
+      "words"
+    ]
+  },
+  "counts": {
+    "n_products": 300,
+    "n_reviews": 726
+  }
+}
